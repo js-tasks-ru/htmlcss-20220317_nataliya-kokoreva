@@ -1,5 +1,3 @@
-@import "../../assets/css/main.css";
-
 /* Стилизация кнопки */
 .btn {
     font-family: 'Roboto';
@@ -9,13 +7,11 @@
     line-height: 19px;
     text-align: center;
     color: var(--white);
-    padding-top: 14px;
+    padding-top: 15px;
     padding-bottom: 14px;
     margin: 0 auto;
     height: 48px;
     width: 189px;
-    min-height: 48px;
-    min-width: 189px;
     border-radius: 8px;
     border: 0;
     transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
@@ -31,39 +27,45 @@
     cursor: pointer;
 }
 
-.btn-primary {
+.btn_primary {
     background-color: var(--blue);
+    padding-right: 66px;
+    padding-left: 66px;
 }
 
-.btn-primary:hover,
-.btn-primary:focus,
-.btn-primary:focus:active,
-.btn-primary:active {
+.btn_primary:hover,
+.btn_primary:focus,
+.btn_primary:focus:active,
+.btn_primary:active {
     background-color: var(--indigo);
 }
 
-.btn-secondary {
+.btn_secondary {
     background-color: var(--purple);
+    padding-right: 57px;
+    padding-left: 56px;
 }
 
-.btn-secondary:hover,
-.btn-secondary:focus,
-.btn-secondary:focus:active,
-.btn-secondary:active {
+.btn_secondary:hover,
+.btn_secondary:focus,
+.btn_secondary:focus:active,
+.btn_secondary:active {
     background-color: var(--deep-purple);
 }
 
-.btn-alternate {
+.btn_alternate {
     background-color: var(--white);
     border: 1px solid var(--grey-3);
     color: var(--grey-4);
     box-sizing: border-box;
+    padding-right: 62px;
+    padding-left: 61px;
 }
 
-.btn-alternate:hover,
-.btn-alternate:focus,
-.btn-alternate:focus:active,
-.btn-alternate:active {
+.btn_alternate:hover,
+.btn_alternate:focus,
+.btn_alternate:focus:active,
+.btn_alternate:active {
     background-color: var(--white);
     border-color: var(--black);
 }
