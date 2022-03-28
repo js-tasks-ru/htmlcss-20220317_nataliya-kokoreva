@@ -1,1 +1,69 @@
+@import "../../assets/css/main.css";
+
 /* Стилизация кнопки */
+.btn {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--white);
+    padding-top: 14px;
+    padding-bottom: 14px;
+    margin: 0 auto;
+    height: 48px;
+    width: 189px;
+    min-height: 48px;
+    min-width: 189px;
+    border-radius: 8px;
+    border: 0;
+    transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
+}
+
+.btn.disabled,
+.btn:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: var(--blue);
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:focus:active,
+.btn-primary:active {
+    background-color: var(--indigo);
+}
+
+.btn-secondary {
+    background-color: var(--purple);
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary:focus:active,
+.btn-secondary:active {
+    background-color: var(--deep-purple);
+}
+
+.btn-alternate {
+    background-color: var(--white);
+    border: 1px solid var(--grey-3);
+    color: var(--grey-4);
+    box-sizing: border-box;
+}
+
+.btn-alternate:hover,
+.btn-alternate:focus,
+.btn-alternate:focus:active,
+.btn-alternate:active {
+    background-color: var(--white);
+    border-color: var(--black);
+}
