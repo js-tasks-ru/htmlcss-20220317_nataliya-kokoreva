@@ -1,4 +1,11 @@
-@import '../fonts/fonts.css';
+@import "../../node_modules/normalize.css/normalize.css";
+@import "../fonts/fonts.css";
+
+@import "../../components/page/page.css";
+@import "../../components/footer/footer.css";
+@import "../../components/header/header.css";
+@import "../../components/preview/preview.css";
+@import "../../components/container/container.css";
 
 :root {
     --white: #ffffff;
@@ -11,6 +18,8 @@
     --grey-2: #DDE2E5;
     --grey-3: #ACB5BD;
     --grey-4: #495057;
+    --grey-6: #F9FAFC;
+    --shadow: #2124290C;
 
     --error: var(--red);
     --success: var(--blue);
@@ -19,6 +28,10 @@
     --secondary: var(--purple);
 }
 
-* {
+:root {
     font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+    height: 100%;
 }

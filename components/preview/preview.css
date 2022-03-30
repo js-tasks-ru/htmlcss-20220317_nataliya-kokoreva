@@ -1,0 +1,25 @@
+.preview {
+    min-height: 1035px;
+    background-color: var(--grey-6);
+    flex-grow: 1;
+    padding: 68px 0 92px 0;
+}
+
+.preview__card {
+    width: 350px;
+    height: 367px;
+    background: var(--white);
+    box-shadow: 0 2px 4px var(--shadow);
+    border-radius: 12px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+    text-align: center;
+    color: var(--black);
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
