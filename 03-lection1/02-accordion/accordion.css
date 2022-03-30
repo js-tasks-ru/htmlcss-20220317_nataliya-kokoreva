@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
 /* Стилизация аккордеона */
 .accordion__item {
     margin-bottom: 8px;
@@ -5,49 +7,36 @@
     border: 1px solid var(--grey-3);
     box-sizing: border-box;
     border-radius: 8px;
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     color: var(--black);
+    padding: 24px 49px 0 32px;
+    width: 730px;
 }
 
 .accordion__item:hover {
     cursor: pointer;
 }
 
-.accordion__item[open] > .accordion__summary  {
+.accordion__item[open] .accordion__summary  {
     padding-bottom: 16px;
 }
 
-.accordion__item[open] .accordion__summary::after  {
-    transform: rotate(45deg);
+.accordion__summary::-webkit-details-marker {
+    display: none;
 }
 
 .accordion__summary {
+    list-style: none;
     display: block;
-    padding-top: 24px;
     padding-bottom: 24px;
-    padding-left: 32px;
-}
-
-.accordion__summary:after {
-    content: ' ';
-    display: block;
-    width: 8px;
-    height: 8px;
-    border: solid var(--grey-4);
-    border-width: 0 2px 2px 0;
-    transform: rotate(-135deg);
-    position: relative;
-    float: right;
-    right: 32px;
-    top: 6px;
 }
 
 .accordion__content {
-    padding: 0 49px 32px 32px;
+    padding-bottom: 32px;
     margin: 0;
     color: var(--grey-4);
 }
