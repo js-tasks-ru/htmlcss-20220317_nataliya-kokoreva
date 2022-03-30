@@ -2,8 +2,6 @@
     display: flex;
     flex-direction: column;
     gap: 24px;
-    width: 579px;
-    height: 192px;
     background: var(--white);
     border: 1px solid var(--grey-3);
     box-sizing: border-box;
@@ -26,31 +24,28 @@
 }
 
 .skeleton__description {
+    width: 87%;
     display: flex;
     flex-flow: column wrap;
     gap: 8px;
 }
 
-.skeleton__label {
+.skeleton__line {
     height: 20px;
-    width: 172px;
+    width: 40%;
     background: var(--gradient);
 }
 
-.skeleton__text {
-    height: 20px;
-    width: 257px;
-    background: var(--gradient);
+.skeleton__line_short {
+    width: 60%;
+}
+
+.skeleton__line_long {
+    width: 100%;
 }
 
 .skeleton__body {
     display: flex;
     flex-direction: column;
     gap: 8px;
-}
-
-.skeleton__content {
-    width: 515px;
-    height: 20px;
-    background: var(--gradient);
 }
