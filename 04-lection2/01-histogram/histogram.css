@@ -3,8 +3,6 @@
     border: 1px solid var(--grey-3);
     box-sizing: border-box;
     border-radius: 8px;
-    width: 50%;
-    height: 185px;
     display: flex;
     flex-direction: column;
     padding: 16px 24px 24px 24px;
@@ -13,16 +11,13 @@
 .histogram__header {
     font-family: 'Inter', sans-serif;
     font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
     line-height: 24px;
     color: var(--black);
     display: flex;
     justify-content: space-between;
-    gap: 47px;
 }
 
-.histogram__header .histogram__link {
+.histogram__link {
     padding-top: 3px;
 }
 
@@ -33,10 +28,15 @@
 }
 
 .histogram__label {
+    margin: 0;
     opacity: 0.8;
+    font-weight: 400;
+    font-size: 16px;
 }
 
 .histogram__total {
+    margin: 0;
+    font-weight: 400;
     font-size: 20px;
     line-height: 26px;
 }
@@ -48,13 +48,14 @@
 }
 
 .histogram__chart {
+    height: 50px;
     display: flex;
     align-items: flex-end;
     gap: 1px;
     padding: 39px 5px 0 2px;
 }
 
-.histogram__chart > div {
+.histogram__chart-item {
     background-color: var(--blue-1);
     flex: 1 1 9px;
 }
