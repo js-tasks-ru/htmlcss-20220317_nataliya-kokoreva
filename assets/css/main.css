@@ -22,6 +22,6 @@
     --secondary: var(--purple);
 }
 
-* {
+:root {
     font-family: 'Roboto', sans-serif;
 }
